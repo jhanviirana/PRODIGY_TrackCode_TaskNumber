@@ -1,0 +1,83 @@
+
+
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #335069;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+  }
+  
+  .navigation a:hover {
+    background-color: #f9f6f6;
+    color: #333;
+    border-radius: 15px;
+  }
+  
+  .navigation.scrolled {  /* Applies styles when scrolled */
+    background-color: #335069;
+  }
+  
+  
+  .container {
+    /* position: relative; */
+    margin-top: 50px;
+    width: 100%;
+    height: 100vh; /* Ensure the container takes the full height of the viewport */
+  }
+  
+  .container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  
+  .textblock {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: rgb(138, 50, 50);
+    /* text-align: center; */
+  }
+  
+  .textblock p {
+    /* margin: 0; */
+    /* font-size: 3rem; */
+    font-weight: bold;
+  }
+
+  .say{
+  font-family: "Gwendolyn", cursive;
+  font-weight: 900;
+  /* font-style: normal; */
+  font-size:100px;
+  }
+
+  .vac{
+    font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  margin-left: 40%;
+  /* left:40% */
+  font-size: 300%;
+  font-style: normal;
+  }
+
+  
+  
