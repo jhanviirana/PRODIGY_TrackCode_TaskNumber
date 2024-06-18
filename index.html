@@ -1,5 +1,3 @@
-<!--Create an interactive navigation menu that changes color or style when scrolled or when hovering over a menu item. The navigation menu should have a fixed position and be visible on all pages. Use HTML to structure the menu, CSS to style it, and JavaScript to add interactivity, such as changing the background color or font color of the menu when it is scrolled or when a menu item is hovered over.   -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,44 +6,68 @@
   <title>RESPONSIVE LANDING PAGE</title>
   <link rel="stylesheet" href="style.css">
 
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gwendolyn:wght@400;700&family=Lilita+One&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gwendolyn:wght@400;700&family=Lilita+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    
   <header class="navigation">
     <a href="#">Home</a>
-    <a href="#">Services</a>
-    <a href="#">More About Us</a>
+    <a href="#services">Services</a>
+    <a href="#more-about">More About Us</a>
+    <a href="#" id="login-link">Login</a>
     <a href="#">Contact</a>
   </header>
 
   <div class="container">
-    
-    <img src="bgimg.jpg.jpg" width="100%" height="100%"
-           alt="Travelling image" style="margin-bottom:0;">
-        <div class="textblock">
-            <p class="say">Say yes </p>
-            <p class="vac"> to your vacation!</p>
-        </div>
-
+    <img src="bgimg.jpg.jpg" alt="Travelling image">
+    <div class="textblock">
+      <p class="say">Say yes </p>
+      <p class="vac"> to your vacation!</p>
+    </div>
   </div>
 
-  
+  <section id="services">
+    <h1>Our Services</h1>
+     <div class="service-item">
+      <div class="service-item1">
+        <h3>SUMMER TRAVEL</h3>
+       <p>Description of service one.</p>
+      </div>
+      <div class="service-item2">
+        <h3>ACTIVE TOUR</h3>
+        <p>Description of service two.</p>
+      </div>
+      <div class="service-item3">
+        <h3>FLIGHT RESEARCH</h3>
+        <p>Description of service three.</p>
+      </div>
+  </div>
+  </section>
+
+  <section id="more-about">
+    <h1 id="more">MORE ABOUT US</h1>
+
+
+  </section>
+
+
+  <!-- Login Form Modal -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <form class="login-form">
+        <h2>Login</h2>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
 
   <script src="script.js"></script>
-</body>
-</html>
-
-    
-
-
 </body>
 </html>
